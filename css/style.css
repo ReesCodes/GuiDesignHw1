@@ -39,7 +39,7 @@ h1#mainPageTitle {
     box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
 
-#benSelfie {
+img {
     display: block;
     max-width: 180px;
     border-radius: 50%;
