@@ -1,0 +1,114 @@
+/* 
+Benjamin Tenney benjamin_tenney@student.uml.edu
+Created: 2025-09-09
+CSS for my Intro Page
+ */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: 'Merriweather', serif;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+h1#mainPageTitle {
+    text-align: center;
+    background: linear-gradient(90deg, #4e54c8, #8f94fb);
+    color: #fff;
+    padding: 1.2em 0;
+    margin: 0 0 2em 0;
+    border-bottom: 4px solid #4e54c8;
+    letter-spacing: 2px;
+    font-size: 2.5em;
+}
+
+#aboutMeSection, #selfRatingArea, #toolSet {
+    background: #fff;
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+#benSelfie {
+    display: block;
+    max-width: 180px;
+    border-radius: 50%;
+    margin: 1em auto 1em auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+#aboutMeSection h2, #selfRatingArea h2, #toolSet h2 {
+    color: #4e54c8;
+    border-bottom: 2px solid #8f94fb;
+    padding-bottom: 0.3em;
+    margin-bottom: 1em;
+}
+
+a {
+    color: #4e54c8;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover {
+    color: #222;
+    text-decoration: underline;
+}
+
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background: #f4f6ff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 0.8em 1em;
+    text-align: left;
+}
+
+th {
+    background: #4e54c8;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+tr:nth-child(even) td {
+    background: #e9eafc;
+}
+
+tr:nth-child(odd) td {
+    background: #f4f6ff;
+}
+
+#toolSet {
+    font-size: 1.1em;
+    margin-bottom: 2em;
+}
+
+@media (max-width: 900px) {
+    #aboutMeSection, #selfRatingArea, #toolSet {
+        max-width: 98vw;
+        padding: 1em;
+    }
+    h1#mainPageTitle {
+        font-size: 2em;
+        padding: 0.8em 0;
+    }
+    #benSelfie {
+        max-width: 120px;
+    }
+}
